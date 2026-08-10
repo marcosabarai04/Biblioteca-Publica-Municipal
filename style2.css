@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Pantalla completa centrada */
+.paginaGracias {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #DCE6F2; /* Fondo celeste suave de la sugerencia */
+}
+
+/* Tarjeta contenedora del mensaje */
+.mensajeGracias {
+    text-align: center;
+    width: 500px;
+    max-width: 90%; /* Para que en celulares no toque los bordes */
+    padding: 50px;
+    background: #ffffff; /* Fondo blanco para destacar el mensaje */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para darle elevación */
+}
+
+.mensajeGracias h1 {
+    color: #003B82; /* Azul principal de la Biblioteca */
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.mensajeGracias p {
+    color: #333333;
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Botón de retorno al inicio */
+.boton {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #003B82; /* Azul principal de la Biblioteca */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.boton:hover {
+    background: #002554; /* Azul más oscuro al pasar el cursor */
+}

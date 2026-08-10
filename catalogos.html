@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+        <title>Biblioteca Pública Municipal</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        
+    </head>
+
+<body>
+
+        <header>
+
+        <div class="logo">
+
+        <img src="LogoHeader.png" alt="Logo Header">
+
+        <div class="titulo">
+
+        <h1>BIBLIOTECA</h1>
+        <h2>PÚBLICA MUNICIPAL</h2>
+        <p>"Un libro es un sueño que tienes en tus manos"</p>
+
+        </div>
+        </div>
+
+        <div class="redes">
+
+        <a href="https://www.facebook.com/Bibliotecaprovincialdrjulioherrera/"><img src="logofacebook.png" alt="Facebook"></a>
+
+        <a href="https://www.instagram.com/bibliotecaprovincialcatamarca?fbclid=IwY2xjawTc6hFwZG9mBWV4dG4DYWVtAjEwAGJyaWQRMWdXbWw2M2ltUUVGUVBaaUdzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeDFTbcF7nBBVr5jyUEgEKPLYJqUqYdGQUu3cdS8c15QEHuB1JpLc9yo03ycw_aem_0Y8hyI0dmF9-a84EaDp0Ow">
+        <img src="logoinstagram.png" alt="Instagram"></a>
+
+        <a href="https://www.youtube.com/@BiblioturismoArgentina"><img src="logoyoutube.png" alt="YouTube">
+
+        </a>
+        </div>
+          </header>
+
+       <nav>
+        <ul>
+        <li>
+        <a href="index.html"><img src="IconoCasaInicio.png" alt="Inicio">INICIO</a>
+
+        </li>
+
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="catalogos.html">CATÁLOGOS</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="eventos.html">EVENTOS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+
+        </ul>
+
+        <form>
+        <input type="search" placeholder="Buscar libros, autores...">
+
+        <button type="submit">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        </button>
+        </form>
+        </nav>
+
+        <section class="banner-foto">
+
+    <div class="banner-foto-contenido">
+
+        <h2>CATÁLOGO DE LIBROS</h2>
+
+        <p>
+            Explorá nuestra colección bibliográfica y encontrá libros
+                    de diferentes autores, géneros y áreas de conocimiento.
+        </p>
+
+    </div>
+
+</section>
+
+<main>
+
+    <div class="contenido">
+
+        <section class="principal">
+
+            <!-- ==========================
+                 ENCABEZADO DEL CATÁLOGO
+            =========================== -->
+
+
+
+
+            <!-- ==========================
+                 BUSCAR LIBRO
+            =========================== -->
+
+            <article class="buscar-libro">
+
+                <h2>BUSCAR LIBRO</h2>
+
+                <p>
+                    Buscá un libro por título, autor o género.
+                </p>
+
+                <form class="form-busqueda">
+
+                    <input
+                        type="search"
+                        placeholder="Escribí el título, autor o género..."
+                    >
+
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        BUSCAR
+                    </button>
+
+                </form>
+
+            </article>
+
+
+            <!-- ==========================
+                 LIBROS DISPONIBLES
+            =========================== -->
+
+            <article class="libros-disponibles">
+
+                <h2>LIBROS DISPONIBLES</h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Género</th>
+                            <th>Estado</th>
+                            <th>Acción</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>El Principito</td>
+                            <td>Antoine de Saint-Exupéry</td>
+                            <td>Infantil</td>
+
+                            <td>
+                                <span class="disponible">✓ Disponible</span>
+                            </td>
+
+                            <td>
+                                <a href="https://www.plenainclusion.org/wp-content/uploads/2023/02/el_principito_lf_1.0.pdf" class="ver-mas">VER MÁS</a>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Don Quijote de la Mancha</td>
+                            <td>Miguel de Cervantes</td>
+                            <td>Novela</td>
+
+                            <td>
+                                <span class="disponible">✓ Disponible</span>
+                            </td>
+
+                            <td>
+                                <a href="https://www.suneo.mx/literatura/subidas/Miguel%20de%20Cervantes%20El%20Ingenioso%20Hidalgo%20Don%20Quijote%20de%20la%20Mancha.pdf" class="ver-mas">VER MÁS</a>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Martín Fierro</td>
+                            <td>José Hernández</td>
+                            <td>Poesía</td>
+
+                            <td>
+                                <span class="no-disponible">✗ No disponible</span>
+                            </td>
+
+                            <td>
+                                <a href="https://editorial.unipe.edu.ar/images/phocadownload/colecciones/intervenciones/martin_fierro.pdf" class="ver-mas">VER MÁS</a>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>1984</td>
+                            <td>George Orwell</td>
+                            <td>Ciencia Ficción</td>
+
+                            <td>
+                                <span class="disponible">✓ Disponible</span>
+                            </td>
+
+                            <td>
+                                <a href="https://www.philosophia.cl/biblioteca/orwell/1984.pdf" class="ver-mas">VER MÁS</a>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Rayuela</td>
+                            <td>Julio Cortázar</td>
+                            <td>Novela</td>
+
+                            <td>
+                                <span class="disponible">✓ Disponible</span>
+                            </td>
+
+                            <td>
+                                <a href="https://archive.org/details/rayuela_20201228/mode/2up" class="ver-mas">VER MÁS</a>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Orgullo y prejuicio</td>
+                            <td>Jane Austen</td>
+                            <td>Romance</td>
+
+                            <td>
+                                <span class="disponible">✓ Disponible</span>
+                            </td>
+
+                            <td>
+                                <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/orgullo_y_prejuicio.pdf" class="ver-mas">VER MÁS</a>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </article>
+
+
+            <!-- ==========================
+                 CATEGORÍAS
+            =========================== -->
+
+            <article class="categorias">
+
+                <h2>CATEGORÍAS</h2>
+
+                <div class="contenedor-categorias">
+
+
+                    <div class="categoria">
+
+                        <h3>NOVELAS</h3>
+
+                        <p>
+                            Descubrí nuestra colección de novelas
+                            nacionales e internacionales.
+                        </p>
+
+                    </div>
+
+
+                    <div class="categoria">
+
+                        <h3>POESÍA</h3>
+
+                        <p>
+                            Explorá libros de poesía clásica
+                            y contemporánea.
+                        </p>
+
+                    </div>
+
+
+                    <div class="categoria">
+
+                        <h3>HISTORIA</h3>
+
+                        <p>
+                            Libros sobre historia general,
+                            de Argentina y del mundo.
+                        </p>
+
+                    </div>
+
+
+                    <div class="categoria">
+
+                        <h3>CIENCIA</h3>
+
+                        <p>
+                            Ciencia, tecnología, medio ambiente
+                            y divulgación científica.
+                        </p>
+
+                    </div>
+
+
+                    <div class="categoria">
+
+                        <h3>INFANTIL</h3>
+
+                        <p>
+                            Literatura infantil y juvenil
+                            para todas las edades.
+                        </p>
+
+                    </div>
+
+
+                    <div class="categoria">
+
+                        <h3>LITERATURA</h3>
+
+                        <p>
+                            Ensayos, cuentos y obras
+                            de literatura general.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- ==========================
+                 INFORMACIÓN
+            =========================== -->
+
+            <article class="informacion-catalogo">
+
+                <h2>INFORMACIÓN DEL CATÁLOGO</h2>
+
+                <p>
+                    El catálogo de la Biblioteca Pública Municipal reúne
+                    una amplia variedad de libros y materiales bibliográficos
+                    disponibles para la comunidad.
+                </p>
+
+                <p>
+                    Los usuarios pueden consultar las obras disponibles
+                    por título, autor o género y acercarse a la biblioteca
+                    para realizar consultas o solicitar préstamos.
+                </p>
+
+            </article>
+
+        </section>
+
+    </div>
+
+</main>
+
+    <footer>
+
+        <section class="footer-logo">
+
+        <img src="LogoFooter.png" alt="Logo">
+
+        <div class="titulo-footer">
+
+        <h2>BIBLIOTECA</h2>
+
+        <h3>PÚBLICA MUNICIPAL</h3>
+
+        <p>Fomentando la lectura, construyendo futuro.</p>
+  
+       </div>
+       </section>
+
+       <section class="footer-enlaces">
+
+       <h3>ENLACES RÁPIDOS</h3>
+
+       <div class="enlaces-footer">
+        <ul>
+            <li><a href=index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="catalogos.html">Catálogo</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        </div>
+        </section>
+        <section>
+
+        <h3>CONTACTO</h3>
+
+        <div class="contacto-footer">
+        <a href="#"><img src="IconoUbicacion.png" alt="Icono Ubicación">Av. Principal 123 - Catamarca</a>
+
+        <a href="tel:3834000000"><img src="IconoTelefono.png" alt="Icono Teléfono">(383) 400-0000</a>
+
+        <a href="mailto:biblioteca@gmail.com"><img src="IconoCorreoElectronico.png" alt="Icono Correo Electronico">biblioteca@gmail.com</a>
+        </div>
+        </section>
+
+        <section>
+        <h3>¿SEGUINOS EN REDES?</h3>
+
+        <div class="redes-footer">
+        <a href="https://www.facebook.com/Bibliotecaprovincialdrjulioherrera/"><img src="logofacebook.png" alt="Facebook"></a>
+
+        <a href="https://www.instagram.com/bibliotecaprovincialcatamarca?fbclid=IwY2xjawTc6hFwZG9mBWV4dG4DYWVtAjEwAGJyaWQRMWdXbWw2M2ltUUVGUVBaaUdzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeDFTbcF7nBBVr5jyUEgEKPLYJqUqYdGQUu3cdS8c15QEHuB1JpLc9yo03ycw_aem_0Y8hyI0dmF9-a84EaDp0Ow"><img src="logoinstagram.png" alt="Instagram"></a>
+
+        <a href="https://www.youtube.com/@BiblioturismoArgentina"><img src="logoyoutube.png" alt="YouTube"></a>
+        </div>
+        </section>
+
+        <div class="copyright">
+            <p>© 2026 Biblioteca Pública Municipal -Todos los derechos reservados - Marcos Iván López Caldarazzi.</p>
+        </div>
+
+    </footer>
+</body>
+</html>

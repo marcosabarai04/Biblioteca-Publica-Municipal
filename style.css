@@ -1,0 +1,2967 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f4f4f4;
+
+    color:#333;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/*====================================
+HEADER
+====================================*/
+
+header{
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 60px;
+
+    border-bottom:4px solid #0b4ea2;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.logo img{
+
+    width:110px;
+
+}
+
+.titulo h1{
+
+    color:#0b4ea2;
+
+    font-size:42px;
+
+    font-weight:900;
+
+    line-height:1;
+
+    margin:0;
+
+}
+
+.titulo h2{
+
+    color:#0b4ea2;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    line-height:1;
+
+    margin-top:5px;
+
+}
+
+.titulo p{
+
+    color:#0b4ea2;
+
+    font-size:16px;
+
+    font-style:italic;
+
+    margin-top:10px;
+
+}
+
+.redes{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.redes img{
+
+    width:36px;
+
+    transition:.3s;
+
+}
+
+.redes img:hover{
+
+    transform:scale(1.15);
+
+}
+
+/*====================================
+MENU
+====================================*/
+
+nav{
+
+    background:#003b82;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 60px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+}
+
+nav{
+
+    background:#003b82;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 60px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+}
+
+nav li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:white;
+
+    padding:18px 22px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+nav li a img{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+nav li a:hover{
+
+    background:#0b65d4;
+
+}
+
+
+nav form{
+
+    display:flex;
+
+}
+
+nav input{
+
+    width:260px;
+
+    padding:10px;
+
+    border:none;
+
+    outline:none;
+
+}
+
+nav button{
+
+    width:50px;
+
+    background:#0b65d4;
+
+    color:white;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.3s;
+
+}
+
+nav button:hover{
+
+    background:#08448f;
+
+}
+
+/*====================================
+BANNER
+====================================*/
+
+.banner{
+
+    height:500px;
+
+    background:url("Biblioteca.jpg") center center / cover no-repeat;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-left:90px;
+
+}
+
+.banner::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    z-index:0;
+
+}
+
+.banner > article{
+
+    background:transparent !important;
+
+
+    border:none !important;
+
+    padding:0 !important;
+
+    margin:0 !important;
+
+    width:500px;
+
+    color:white;
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+#inicio h2{
+
+    color:white;
+
+    font-size:36px;
+
+    line-height:1.15;
+
+    margin-bottom:20px;
+
+    text-shadow:none;
+
+}
+
+.banner p{
+
+    color:white;
+
+    font-size:20px;
+
+    line-height:30px;
+
+    margin-bottom:30px;
+
+    text-shadow:1px 1px 5px black;
+
+}
+
+.banner a{
+
+    display:inline-block;
+
+    background:#0b65d4;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:5px;
+
+    font-weight:bold;
+
+}
+
+.banner a:hover{
+
+    background:#00408c;
+
+}
+
+/*====================================
+CONTENEDOR
+====================================*/
+
+.contenido{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:stretch; /* Obliga a la columna .principal y al aside a tener EXACTAMENTE la misma altura */
+
+    gap:20px;
+
+}
+
+.principal{
+
+    width:78%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between; /* Distribuye el espacio vertical de forma pareja */
+
+}
+
+aside{
+
+    width:22%;
+
+    padding:0 10px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between; /* Distribuye las tarjetas del aside de arriba a abajo */
+
+}
+
+/*====================================
+ARTÍCULOS GENERALES
+====================================*/
+
+.principal article{
+
+    background:white;
+
+    padding:20px; /* Reducido para achicar la caja */
+
+    margin-bottom:20px;
+
+    border-radius:8px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+}
+
+.principal article h2{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#0b4ea2;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.principal article h2 img{
+
+    width:35px;
+
+}
+
+/*====================================
+LIBROS DESTACADOS
+====================================*/
+
+.libros{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.libro{
+
+    width:180px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    background:white;
+
+    transition:.3s;
+
+}
+
+.libro:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+.libro img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.info-libro{
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+.info-libro h3{
+
+    color:black;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+}
+
+.info-libro p{
+
+    font-size:14px;
+
+    margin-bottom:15px;
+
+    color:black;
+
+}
+
+.info-libro a{
+
+    display:inline-block;
+
+    background:#0b4ea2;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:5px;
+
+    transition:.3s;
+
+}
+
+.info-libro a:hover{
+
+    background:#003b82;
+
+}
+
+/*====================================
+CATÁLOGO
+====================================*/
+
+.catalogo img{
+
+    width:55px;
+
+}
+
+/* Color verde para el ícono de disponible */
+.disponible{
+    color: #2e7d32; /* Verde */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Color rojo si alguno no está disponible (opcional) */
+.no-disponible{
+    color: #c62828; /* Rojo */
+    font-weight: bold;
+    font-size: 18px;
+}
+/*====================================
+TABLA
+====================================*/
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:#0b4ea2;
+
+    color:white;
+
+    padding:15px 10px; /* Relleno compacto */
+
+    font-size:13px;
+
+border:1px solid #ddd;
+}
+
+td{
+
+    padding:6px 10px; /* Reducido para que las filas no sean tan altas */
+
+    border:1px solid #ddd;
+
+    text-align:center;
+
+    font-size:13px;
+
+}
+
+td img{
+
+    width:40px;
+
+    margin:auto;
+
+}
+
+tr:nth-child(even){
+
+    background:#f8f8f8;
+
+}
+
+tr:hover{
+
+    background:#eef5ff;
+
+}
+
+/*====================================
+SERVICIOS
+====================================*/
+
+.contenedor-servicios{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:10px;
+
+}
+
+.servicio{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    padding:10px;
+
+}
+
+.servicio:hover{
+
+    background:#f5f9ff;
+
+}
+
+.servicio img{
+
+    width:40px;
+
+}
+
+.servicio h3{
+
+    font-size:16px;
+
+    margin-bottom:5px;
+}
+
+.servicio p{
+
+    font-size:13px;
+
+    line-height:18px;
+
+}
+
+/*====================================
+GALERÍA
+====================================*/
+
+.imagenes-galeria{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+
+}
+
+.imagenes-galeria img{
+
+    width:100%;
+
+    height:130px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.imagenes-galeria img:hover{
+
+    transform:scale(1.05);
+
+}
+.boton-galeria{
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+.boton-galeria a{
+
+    display:inline-block;
+
+    background:#0b4ea2;
+
+    color:white;
+
+    padding:12px 30px;
+
+    border-radius:5px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.boton-galeria a:hover{
+
+    background:#003b82;
+
+}
+
+/*====================================
+HORARIOS Y CALENDARIO
+====================================*/
+
+.horarios-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.horario-item h4 {
+    display: flex;
+    align-items: center;
+    gap: 8px;                 /* Espacio entre el ícono azul y el título del día */
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.icono-almanaque-azul {
+    width: 45px;             /* Tamaño del ícono */
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.horario-item p {
+    color: black;
+    font-size: 14px;
+    margin-left: 53px;        /* Alinea la hora debajo del texto del día */
+    margin-bottom: 0;
+}
+/*====================================
+SIDEBAR
+====================================*/
+
+aside{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+    padding-top:30px;
+}
+
+.tarjeta{
+
+    background:white;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+}
+
+.tarjeta h3 {
+    background: #0b4ea2;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;               /* Separa el ícono del texto */
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+/* Controla el tamaño del ícono blanco */
+.tarjeta h3 img,
+.icono-titulo {
+    width: 40px;             /* Ajusta según el tamaño que prefieras (entre 18px y 24px) */
+    height: auto;
+    object-fit: contain;
+}
+
+
+.tarjeta p,
+.tarjeta h4{
+
+    padding:0 20px;
+
+}
+
+.tarjeta p{
+
+    margin-bottom:10px;
+
+    line-height:24px;
+
+}
+
+.evento{
+
+    padding:20px;
+
+}
+
+.evento h4{
+
+    color:#0b4ea2;
+
+    margin-bottom:8px;
+
+}
+
+.tarjeta hr{
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+}
+
+/*====================================
+EVENTOS
+====================================*/
+
+/* Alineación e ícono para el título HORARIOS DE ATENCIÓN */
+.icono-titulo-horarios {
+    width: 24px;              /* Tamaño del ícono */
+    height: auto;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;   /* Centra el ícono verticalmente con el texto */
+    margin-right: 10px;       /* Separación respecto a la letra 'H' */
+}
+
+/* Estilos para los íconos PNG de las fechas */
+.evento {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+}
+
+.img-fecha {
+    width: 90px;          /* Ajusta el ancho para que coincida con la tarjeta */
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;       /* Evita que la imagen se deforme si el texto es largo */
+}
+
+.info-evento h4 {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 4px;
+    padding: 0;
+}
+
+.info-evento p {
+    font-size: 13px;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+/*====================================
+FORMULARIO
+====================================*/
+
+.tarjeta form{
+
+    padding:20px;
+
+}
+
+.tarjeta input,
+.tarjeta select,
+.tarjeta textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+    font-size:15px;
+
+}
+
+.tarjeta textarea{
+
+    resize:vertical;
+
+    min-height:120px;
+
+}
+
+.tarjeta button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    background:#0b4ea2;
+
+    color:white;
+
+    border-radius:5px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.tarjeta button:hover{
+
+    background:#003b82;
+
+}
+
+iframe{
+
+    width:100%;
+
+    height:250px;
+
+    border:0;
+
+}
+
+
+/*====================================
+FOOTER COMPLETO
+====================================*/
+
+footer {
+    margin-top: 50px;
+    background: #003b82;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;             /* Permite que los elementos se acomoden */
+    padding: 50px 0 0 0;          /* Quita el padding de abajo para pegar el copyright */
+    gap: 30px;
+}
+
+footer section {
+    flex: 1;
+    min-width: 220px;
+    padding: 0 20px;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.titulo-footer h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+}
+
+.titulo-footer h3 {
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+    line-height: 1;
+}
+
+.titulo-footer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ddd;
+    font-style: italic;
+}
+
+.contacto-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.contacto-footer a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.contacto-footer a:hover {
+    text-decoration: underline;
+}
+
+.contacto-footer img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.footer-enlaces {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.footer-enlaces h3 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.enlaces-footer {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+}
+
+.redes-footer {
+    display: flex;
+    gap: 15px;
+}
+
+.redes-footer img {
+    width: 35px;
+    transition: .3s;
+}
+
+.redes-footer img:hover {
+    transform: scale(1.15);
+}
+
+/* FRANJA COPYRIGHT (Obliga a ubicarse abajo ocupando todo el ancho) */
+.copyright {
+    width: 100%;                  /* Ocupa todo el ancho disponible */
+    flex-basis: 100%;             /* Fuerza a saltar de línea dentro del flexbox */
+    background-color: #011a38;    /* Azul más oscuro para la franja inferior */
+    box-sizing: border-box;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 30px;             /* Separación de las columnas superiores */
+}
+
+.copyright p {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+/*====================================
+DISTRIBUCIÓN DEL CONTENIDO
+====================================*/
+
+.contenido-secundario{
+    display: flex;
+    align-items: stretch; /* Estira el Catálogo y Servicios+Galería a la misma altura */
+    gap: 20px;
+    flex: 1; /* Ocupa el espacio vertical restante */
+}
+
+.columna-izquierda{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.columna-izquierda article{
+    height: 100%; /* Hace que la tarjeta del catálogo cubra todo el alto */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.columna-izquierda table{
+    width: 100%;
+    border-collapse: collapse;
+    flex: 1; /* La tabla absorbe el espacio vertical sobrante para igualar bordes */
+}
+
+.columna-derecha{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.columna-derecha article{
+    margin-bottom: 0;
+}
+
+/*====================================
+RESPONSIVE
+====================================*/
+
+@media(max-width:1200px){
+
+    .contenido{
+
+        flex-direction:column;
+
+        padding:20px;
+
+    }
+
+    aside{
+
+        width:100%;
+
+    }
+
+    .principal{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        text-align:center;
+
+    }
+
+    nav{
+
+        flex-direction:column;
+
+        padding:20px;
+
+        gap:20px;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .libros{
+
+        justify-content:center;
+
+    }
+
+    .contenedor-servicios{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .imagenes-galeria{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .banner{
+
+        padding:40px;
+
+        text-align:center;
+
+        justify-content:center;
+
+    }
+
+    .banner article{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .imagenes-galeria{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .libro{
+
+        width:100%;
+
+    }
+
+    table{
+
+        display:block;
+
+        overflow-x:auto;
+
+    }
+
+    .logo{
+
+        flex-direction:column;
+
+    }
+
+    .logo h1{
+
+        font-size:26px;
+
+    }
+
+    .banner h2{
+
+        font-size:34px;
+
+    }
+
+    .banner p{
+
+        font-size:18px;
+
+        line-height:28px;
+    }
+    }
+    
+    /*====================================
+PÁGINA NOSOTROS
+====================================*/
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenido{
+    width:100%;
+    display:flex;
+    align-items:flex-start;
+}
+
+.principal{
+    width:100%;
+}
+
+
+/*====================================
+SOBRE NOSOTROS
+====================================*/
+
+.sobre-nosotros{
+    text-align:center;
+}
+
+.sobre-nosotros h2{
+    justify-content:center;
+    color:#0b4ea2;
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.subtitulo-nosotros{
+    color:#666;
+    font-size:22px;
+    font-style:italic;
+    margin-bottom:25px;
+}
+
+
+/*====================================
+NUESTRA HISTORIA
+====================================*/
+
+.historia h2,
+.quienes-somos h2,
+.objetivos h2{
+    color:#0b4ea2;
+}
+
+.historia p{
+    line-height:26px;
+    margin-bottom:15px;
+}
+
+
+/*====================================
+¿QUIÉNES SOMOS?
+====================================*/
+
+.contenido-quienes{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.imagen-quienes{
+    width:45%;
+    flex-shrink:0;
+}
+
+.imagen-quienes img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.texto-quienes{
+    width:55%;
+}
+
+.texto-quienes p{
+    line-height:26px;
+    margin-bottom:15px;
+}
+
+
+/*====================================
+MISIÓN Y VISIÓN
+====================================*/
+
+.mision-vision{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-bottom:30px;
+}
+
+.mision-vision article{
+    margin-bottom:0;
+}
+
+.mision-vision h2{
+    color:#0b4ea2;
+    font-size:25px;
+}
+
+.mision-vision p{
+    line-height:26px;
+    margin-bottom:15px;
+}
+
+
+/*====================================
+OBJETIVOS
+====================================*/
+
+.objetivos h2{
+    text-align:center;
+    justify-content:center;
+    margin-bottom:30px;
+}
+
+.lista-objetivos{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.objetivo{
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:20px;
+    transition:.3s;
+}
+
+.objetivo:hover{
+    background:#f5f9ff;
+    transform:translateY(-3px);
+}
+
+.objetivo h3{
+    color:#0b4ea2;
+    margin-bottom:10px;
+    font-size:19px;
+}
+
+.objetivo p{
+    line-height:24px;
+}
+
+
+/*====================================
+RESPONSIVE NOSOTROS
+====================================*/
+
+@media(max-width:900px){
+
+    .contenido-quienes{
+        flex-direction:column;
+    }
+
+    .imagen-quienes,
+    .texto-quienes{
+        width:100%;
+    }
+
+    .mision-vision{
+        grid-template-columns:1fr;
+    }
+
+    .lista-objetivos{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .sobre-nosotros h2{
+        font-size:28px;
+    }
+
+    .subtitulo-nosotros{
+        font-size:18px;
+    }
+
+    .imagen-quienes img{
+        height:220px;
+    }
+
+}
+
+/*====================================
+VIDEO INSTITUCIONAL
+====================================*/
+
+.video-institucional{
+    text-align:center;
+}
+
+.video-institucional h2{
+
+    color:#0b4ea2;
+
+    margin-bottom:15px;
+
+    text-align:center;
+
+    justify-content:center;
+
+    width:100%;
+}
+
+.video-institucional > p{
+
+    font-size:16px;
+
+    line-height:25px;
+
+    margin-bottom:25px;
+
+    text-align:center;
+}
+
+.contenedor-video{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.contenedor-video video{
+
+    display:block;
+
+    width:80%;
+
+    max-width:900px;
+
+    height:auto;
+
+    border-radius:8px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+
+/*====================================
+RESPONSIVE VIDEO
+====================================*/
+
+@media(max-width:600px){
+
+    .contenedor-video video{
+
+        width:100%;
+
+    }
+
+}
+
+
+/*====================================
+SERVICIOS
+====================================*/
+
+/* PRESENTACIÓN */
+
+.presentacion-servicios{
+
+    background:white;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    border-radius:8px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+.presentacion-servicios h2{
+
+    color:#0b4ea2;
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.subtitulo-servicios{
+
+    color:#666;
+
+    font-size:18px;
+
+    font-style:italic;
+
+    margin-bottom:20px;
+
+}
+
+.presentacion-servicios p:last-child{
+
+    line-height:26px;
+
+    font-size:16px;
+
+}
+
+
+/*====================================
+LISTA DE SERVICIOS
+====================================*/
+
+.servicios-lista{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-bottom:30px;
+
+}
+
+
+.servicio{
+
+    background:white;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    padding:25px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+
+.servicio:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
+
+}
+
+
+.servicio > img{
+
+    width:55px;
+
+    height:55px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+}
+
+
+.servicio h3{
+
+    color:#0b4ea2;
+
+    font-size:19px;
+
+    margin-bottom:10px;
+
+}
+
+
+.servicio p{
+
+    color:#555;
+
+    line-height:24px;
+
+    font-size:15px;
+
+}
+
+
+/*====================================
+ACTIVIDADES CULTURALES
+====================================*/
+
+.actividades-culturales{
+
+    background:white;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    border-radius:8px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+}
+
+
+.actividades-culturales h2{
+
+    color:#0b4ea2;
+
+    font-size:28px;
+
+    text-align:center;
+
+}
+
+
+/*====================================
+LISTA DE ACTIVIDADES
+====================================*/
+
+.actividades-lista{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-bottom:30px;
+
+}
+
+
+.actividad{
+
+    background:white;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    padding:25px;
+
+    min-height:150px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+
+.actividad:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
+
+}
+
+
+.actividad h3{
+
+    color:#0b4ea2;
+
+    font-size:18px;
+
+    margin-bottom:12px;
+
+}
+
+
+.actividad p{
+
+    color:#555;
+
+    line-height:24px;
+
+    font-size:15px;
+
+}
+
+
+/*====================================
+MÁS INFORMACIÓN
+====================================*/
+
+.informacion-servicios{
+
+    background:white;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    border-radius:8px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+
+.informacion-servicios h2{
+
+    color:#0b4ea2;
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+}
+
+
+.informacion-servicios p{
+
+    color:#555;
+
+    font-size:16px;
+
+    line-height:25px;
+
+}
+
+
+
+
+/*====================================
+BANNER EVENTOS
+====================================*/
+
+.banner-eventos{
+
+    height:300px;
+
+    background:url("Biblioteca.jpg") center center / cover no-repeat;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.banner-eventos::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.banner-eventos-contenido{
+
+    position:relative;
+
+    z-index:1;
+
+    color:white;
+
+}
+
+.banner-eventos h2{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+    text-shadow:1px 1px 5px black;
+
+}
+
+.banner-eventos p{
+
+    font-size:21px;
+
+    text-shadow:1px 1px 5px black;
+
+}
+
+
+/*====================================
+PRESENTACIÓN EVENTOS
+====================================*/
+
+.presentacion-eventos{
+
+    background:white;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    border-radius:8px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+.presentacion-eventos h2{
+
+    color:#0b4ea2;
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.subtitulo-eventos{
+
+    color:#666;
+
+    font-size:18px;
+
+    font-style:italic;
+
+    margin-bottom:20px;
+
+}
+
+.presentacion-eventos p:last-child{
+
+    color:#555;
+
+    line-height:26px;
+
+    font-size:16px;
+
+}
+
+
+/*====================================
+TÍTULO PRÓXIMOS EVENTOS
+====================================*/
+
+.titulo-eventos{
+
+    background:white;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    border-radius:8px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+.titulo-eventos h2{
+
+    color:#0b4ea2;
+
+    font-size:28px;
+
+    margin-bottom:10px;
+
+}
+
+.titulo-eventos p{
+
+    color:#555;
+
+    font-size:16px;
+
+}
+
+
+/*====================================
+LISTA DE EVENTOS
+====================================*/
+
+.eventos-lista{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-bottom:30px;
+
+}
+
+
+/*====================================
+TARJETA EVENTO
+====================================*/
+
+.evento{
+
+    background:white;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    padding:25px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.evento:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
+
+}
+
+
+/*====================================
+FECHA
+====================================*/
+
+.fecha-evento{
+
+    min-width:75px;
+
+    height:80px;
+
+    background:#0b4ea2;
+
+    color:white;
+
+    border-radius:8px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+}
+
+.fecha-evento .dia{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    line-height:30px;
+
+}
+
+.fecha-evento .mes{
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    margin-top:5px;
+
+}
+
+
+/*====================================
+INFORMACIÓN EVENTO
+====================================*/
+
+.info-evento h3{
+
+    color:#0b4ea2;
+
+    font-size:19px;
+
+    margin-bottom:10px;
+
+}
+
+.info-evento p{
+
+    color:#555;
+
+    line-height:23px;
+
+    font-size:15px;
+
+}
+
+.datos-evento{
+
+    margin-top:15px;
+
+    font-size:14px !important;
+
+    color:#0b4ea2 !important;
+
+}
+
+.datos-evento i{
+
+    margin-right:5px;
+
+}
+
+
+/*====================================
+ACTIVIDADES DESTACADAS
+====================================*/
+
+.actividades-destacadas{
+
+    background:white;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+    border-radius:8px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+.actividades-destacadas h2{
+
+    color:#0b4ea2;
+
+    font-size:28px;
+
+    margin-bottom:12px;
+
+}
+
+.actividades-destacadas p{
+
+    color:#555;
+
+    line-height:25px;
+
+}
+
+
+/*====================================
+DESTACADOS
+====================================*/
+
+.destacados-lista{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-bottom:30px;
+
+}
+
+.destacado{
+
+    background:white;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 0 10px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.destacado:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
+
+}
+
+.destacado img{
+
+    width:55px;
+
+    height:55px;
+
+    object-fit:contain;
+
+    margin:0 auto 15px;
+
+}
+
+.destacado h3{
+
+    color:#0b4ea2;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+}
+
+.destacado p{
+
+    color:#555;
+
+    line-height:23px;
+
+    font-size:15px;
+
+}
+
+
+/*====================================
+INFORMACIÓN EVENTOS
+====================================*/
+
+.informacion-eventos{
+
+    background:white;
+
+    padding:30px;
+
+    margin-bottom:30px;
+
+    border-radius:8px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+    text-align:center;
+
+}
+
+.informacion-eventos h2{
+
+    color:#0b4ea2;
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+}
+
+.informacion-eventos p{
+
+    color:#555;
+
+    line-height:25px;
+
+    margin-bottom:20px;
+
+}
+
+.informacion-eventos a{
+
+    display:inline-block;
+
+    background:#0b4ea2;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:5px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.informacion-eventos a:hover{
+
+    background:#003b82;
+
+}
+
+
+/*====================================
+CATÁLOGO - ENCABEZADO
+====================================*/
+
+.encabezado-catalogo{
+
+    text-align:center;
+
+}
+
+.encabezado-catalogo h1{
+
+    color:#0b4ea2;
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.encabezado-catalogo p{
+
+    font-size:18px;
+
+    line-height:28px;
+
+}
+
+
+/*====================================
+BUSCAR LIBRO
+====================================*/
+
+.buscar-libro{
+
+    text-align:center;
+
+}
+
+.buscar-libro h2{
+
+    justify-content:center;
+
+}
+
+.buscar-libro p{
+
+    margin-bottom:20px;
+
+}
+
+.form-busqueda{
+
+    display:flex;
+
+    max-width:700px;
+
+    margin:0 auto;
+
+}
+
+.form-busqueda input{
+
+    flex:1;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px 0 0 5px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.form-busqueda button{
+
+    padding:14px 25px;
+
+    border:none;
+
+    background:#0b4ea2;
+
+    color:white;
+
+    border-radius:0 5px 5px 0;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+.form-busqueda button:hover{
+
+    background:#003b82;
+
+}
+
+
+/*====================================
+TABLA DEL CATÁLOGO
+====================================*/
+
+.libros-disponibles table{
+
+    margin-top:20px;
+
+}
+
+.disponible{
+
+    color:#198754;
+
+    font-weight:bold;
+
+}
+
+.no-disponible{
+
+    color:#dc3545;
+
+    font-weight:bold;
+
+}
+
+.ver-mas{
+
+    display:inline-block;
+
+    background:#0b4ea2;
+
+    color:white;
+
+    padding:7px 12px;
+
+    border-radius:4px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+.ver-mas:hover{
+
+    background:#003b82;
+
+    text-decoration:none;
+
+}
+
+
+/*====================================
+CATEGORÍAS
+====================================*/
+
+.contenedor-categorias{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+.categoria{
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    padding:20px;
+
+    background:#fff;
+
+    transition:.3s;
+
+}
+
+.categoria:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+}
+
+.categoria h3{
+
+    color:#0b4ea2;
+
+    margin-bottom:10px;
+
+}
+
+.categoria p{
+
+    line-height:24px;
+
+}
+
+
+/*====================================
+INFORMACIÓN DEL CATÁLOGO
+====================================*/
+
+.informacion-catalogo p{
+
+    line-height:26px;
+
+    margin-bottom:15px;
+
+}
+
+
+/*====================================
+RESPONSIVE CATÁLOGO
+====================================*/
+
+@media(max-width:900px){
+
+    .contenedor-categorias{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .contenedor-categorias{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .form-busqueda{
+
+        flex-direction:column;
+
+    }
+
+    .form-busqueda input{
+
+        border-radius:5px;
+
+        margin-bottom:10px;
+
+    }
+
+    .form-busqueda button{
+
+        border-radius:5px;
+
+    }
+
+}
+
+
+/*====================================
+CONTACTO
+====================================*/
+
+.encabezado-contacto{
+
+    text-align:center;
+
+}
+
+.encabezado-contacto h1{
+
+    color:#0b4ea2;
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.encabezado-contacto p{
+
+    font-size:18px;
+
+    line-height:28px;
+
+}
+
+
+/*====================================
+INFORMACIÓN Y FORMULARIO
+====================================*/
+
+.contacto-contenedor{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+}
+
+
+/*====================================
+INFORMACIÓN DE CONTACTO
+====================================*/
+
+.informacion-contacto h2{
+
+    color:#0b4ea2;
+
+    margin-bottom:20px;
+
+}
+
+.informacion-contacto > p{
+
+    line-height:25px;
+
+    margin-bottom:25px;
+
+}
+
+
+.dato-contacto{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:15px;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    background:#fff;
+
+    transition:.3s;
+
+}
+
+
+.dato-contacto:hover{
+
+    background:#f5f9ff;
+
+}
+
+
+.dato-contacto img{
+
+    width:40px;
+
+    height:40px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+}
+
+
+.dato-contacto h3{
+
+    color:#0b4ea2;
+
+    font-size:16px;
+
+    margin-bottom:5px;
+
+}
+
+
+.dato-contacto p{
+
+    margin:0;
+
+    line-height:22px;
+
+}
+
+
+/*====================================
+FORMULARIO
+====================================*/
+
+.formulario-contacto h2{
+
+    color:#0b4ea2;
+
+    margin-bottom:20px;
+
+}
+
+
+.formulario-contacto form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.formulario-contacto label{
+
+    font-weight:bold;
+
+    margin-bottom:7px;
+
+}
+
+
+.formulario-contacto input,
+.formulario-contacto textarea{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+
+    font-size:15px;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    outline:none;
+
+}
+
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus{
+
+    border-color:#0b4ea2;
+
+}
+
+
+.formulario-contacto textarea{
+
+    min-height:140px;
+
+    resize:vertical;
+
+}
+
+
+.formulario-contacto button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    background:#0b4ea2;
+
+    color:white;
+
+    border-radius:5px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.formulario-contacto button:hover{
+
+    background:#003b82;
+
+}
+
+
+/*====================================
+UBICACIÓN
+====================================*/
+
+.ubicacion-contacto{
+
+    margin-top:5px;
+
+}
+
+
+.ubicacion-contacto h2{
+
+    color:#0b4ea2;
+
+    margin-bottom:15px;
+
+}
+
+
+.ubicacion-contacto > p{
+
+    margin-bottom:20px;
+
+}
+
+
+.ubicacion-contacto iframe{
+
+    width:100%;
+
+    height:350px;
+
+    border:0;
+
+    border-radius:8px;
+
+}
+
+
+/*====================================
+RESPONSIVE
+====================================*/
+
+@media(max-width:800px){
+
+    .contacto-contenedor{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .dato-contacto{
+
+        align-items:flex-start;
+
+    }
+
+    .ubicacion-contacto iframe{
+
+        height:280px;
+
+    }
+
+}
+
+
+
+/*====================================
+BANNER FOTO
+====================================*/
+
+.banner-foto{
+
+    height:300px;
+
+    background:url("BannerFoto.jpg") center center / cover no-repeat;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.banner-foto::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+}
+
+.banner-foto-contenido{
+
+    position:relative;
+
+    z-index:1;
+
+    color:white;
+
+}
+
+.banner-foto h2{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+    text-shadow:1px 1px 5px black;
+
+}
+
+.banner-foto p{
+
+    font-size:21px;
+
+    text-shadow:1px 1px 5px black;
+
+}
